@@ -21,19 +21,32 @@ export default function Login({ onLogin }) {
 
     try {
       const emailNormalizado = email.toLowerCase().trim();
-      const { data: usuarioExistente, error: errorBusqueda } = await supabase
-        .from('usuarios')
-        .select('*')
-        .eq('email', emailNormalizado)
-        .single();
+      // 1. Autenticar con Supabase Auth
+const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
+  email: emailNormalizado,
+  password: password,
+});
 
-      if (errorBusqueda || !usuarioExistente) {
-        setError('❌ Correo no registrado en el sistema');
-        setLoading(false);
-        return;
-      }
+if (authError) {
+  setError('❌ Correo o contraseña incorrectos');
+  setLoading(false);
+  return;
+}
 
-      onLogin(usuarioExistente);
+// 2. Buscar datos del usuario en la tabla
+const { data: usuarioExistente, error: errorBusqueda } = await supabase
+  .from('usuarios')
+  .select('*')
+  .eq('email', emailNormalizado)
+  .single();
+
+if (errorBusqueda || !usuarioExistente) {
+  setError('❌ Usuario no encontrado en el sistema');
+  setLoading(false);
+  return;
+}
+
+onLogin(usuarioExistente);
     } catch (err) {
       setError('Error al iniciar sesión: ' + err.message);
     } finally {
