@@ -366,7 +366,7 @@ function Footer() {
           <div>
             <h3 className="text-white font-bold text-xs tracking-widest uppercase mb-5">Contacto</h3>
             <div className="space-y-3 text-xs text-zinc-400">
-              <p>📧 julian.gomez@grupolithia.cl</p>
+              <p>📧 contacto@grupolithia.cl</p>
               <p>🌐 www.grupolithia.cl</p>
               <p>📞 +56 9 8368 1545</p>
               <p>📍 Kilómetro 3 Ruta 66 PC29, Santo Domingo<br />&nbsp;&nbsp;&nbsp;&nbsp;Región de Valparaíso y alrededores</p>
