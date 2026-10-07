@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Logo
 const IMG_LOGO =
-  "https://sensible-spoonbill-485.convex.cloud/api/storage/998944bd-6182-44af-9d7e-84f624902489";
+  "/logo.png";
 
 // ── Icons ─────────────────────────────────────────────────────
 const MenuIcon = () => (

@@ -165,35 +165,35 @@ export default function Proyectos() {
       icon: ClipboardCheck,
       titulo: 'Reunión y Asesoría',
       desc: 'Escuchamos tus necesidades, ideas y objetivos para desarrollar la mejor solución para tu proyecto.',
-      imagen: 'https://sensible-spoonbill-485.convex.cloud/api/storage/5ba0f1a0-8ff4-4b22-a597-1bafd5994f32',
+      imagen: '/images/obra-1.jpg',
     },
     {
       step: '02',
       icon: FileSearch,
       titulo: 'Evaluación y Presupuesto',
       desc: 'Analizamos técnicamente el proyecto y entregamos una propuesta clara, transparente y ajustada a tus requerimientos.',
-      imagen: 'https://sensible-spoonbill-485.convex.cloud/api/storage/a180a2c4-f2af-4e92-b5c4-aae4b35909dc',
+      imagen: '/images/obra-3.jpg',
     },
     {
       step: '03',
       icon: CalendarClock,
       titulo: 'Planificación',
       desc: 'Organizamos cada etapa definiendo tiempos, materiales y procesos constructivos.',
-      imagen: 'https://sensible-spoonbill-485.convex.cloud/api/storage/0cc871d9-a1c0-4ccf-8285-7ffe91e24252',
+      imagen: '/images/obra-6.jpg',
     },
     {
       step: '04',
       icon: HardHat,
       titulo: 'Ejecución de la Obra',
       desc: 'Supervisión constante, control de calidad, comunicación permanente y reportes diarios mediante nuestro sistema de gestión.',
-      imagen: 'https://sensible-spoonbill-485.convex.cloud/api/storage/bfbd7263-494e-4dfa-a79c-77bbbb430c79',
+      imagen: '/images/obra-5.jpg',
     },
     {
       step: '05',
       icon: CheckCircle2,
       titulo: 'Entrega Final',
       desc: 'Revisión completa del trabajo para asegurar un resultado profesional y la satisfacción del cliente.',
-      imagen: 'https://sensible-spoonbill-485.convex.cloud/api/storage/0964c63c-72fb-4818-a269-63b95c03b3a3',
+      imagen: '/images/obra-7.jpg',
     },
   ];
 
@@ -205,7 +205,7 @@ export default function Proyectos() {
       estado: 'En progreso',
       año: 2024,
       imagen:
-        'https://sensible-spoonbill-485.convex.cloud/api/storage/63dcf2d0-4600-4e42-8124-bc74cb1bec11',
+        '/images/obra-1.jpg',
     },
     {
       id: 2,
@@ -214,7 +214,7 @@ export default function Proyectos() {
       estado: 'Completado',
       año: 2023,
       imagen:
-        'https://sensible-spoonbill-485.convex.cloud/api/storage/82d25407-4bb5-450f-94e8-97ffbe3522a9',
+        '/images/obra-3.jpg',
     },
     {
       id: 3,
@@ -223,7 +223,7 @@ export default function Proyectos() {
       estado: 'Completado',
       año: 2023,
       imagen:
-        'https://sensible-spoonbill-485.convex.cloud/api/storage/45ab079a-83c6-467c-8d47-578c761367d1',
+        '/images/obra-6.jpg',
     },
     {
       id: 4,
@@ -232,7 +232,7 @@ export default function Proyectos() {
       estado: 'Completado',
       año: 2024,
       imagen:
-        'https://sensible-spoonbill-485.convex.cloud/api/storage/7812168b-058b-40fe-8d95-67100a6f6b4c',
+        '/images/obra-5.jpg',
     },
     {
       id: 5,
@@ -241,7 +241,7 @@ export default function Proyectos() {
       estado: 'Completado',
       año: 2022,
       imagen:
-        'https://sensible-spoonbill-485.convex.cloud/api/storage/fe952a51-a6a5-4e44-a94c-583c090856cd',
+        '/images/obra-7.jpg',
     },
     {
       id: 6,
@@ -250,7 +250,7 @@ export default function Proyectos() {
       estado: 'Completado',
       año: 2024,
       imagen:
-        'https://sensible-spoonbill-485.convex.cloud/api/storage/bcd81ff7-98aa-4dc5-b98d-6b9249fba396',
+        '/images/obra-4.jpg',
     },
   ];
 
@@ -276,7 +276,7 @@ export default function Proyectos() {
       <header className="relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('https://sensible-spoonbill-485.convex.cloud/api/storage/85c2c915-0868-4fe2-9f6b-e49e9526e47b')` }}
+          style={{ backgroundImage: `url('/images/obra-2.jpg')` }}
         />
         <div className="absolute inset-0 bg-zinc-950/80 bg-gradient-to-b from-zinc-950/40 via-zinc-950/80 to-zinc-950 pointer-events-none" />
         
@@ -297,7 +297,7 @@ export default function Proyectos() {
           >
             <motion.img
               variants={fadeUp}
-              src="https://sensible-spoonbill-485.convex.cloud/api/storage/998944bd-6182-44af-9d7e-84f624902489"
+              src="/logo.png"
               alt="Grupo Lithia"
               className="h-16 md:h-20 w-auto object-contain mb-8"
             />
@@ -344,7 +344,7 @@ export default function Proyectos() {
       </div>
 
       {/* ─── QUIÉNES SOMOS ─── */}
-      <Section id="nosotros" bgImage="https://sensible-spoonbill-485.convex.cloud/api/storage/4f6c4283-bf40-4ef9-92b6-2482195cf5a3">
+      <Section id="nosotros" bgImage="/images/obra-1.jpg">
         <div className="grid lg:grid-cols-5 gap-16">
           <div className="lg:col-span-3">
             <SectionTitle label="Quiénes somos" title="Experiencia, calidad y compromiso en cada obra" />
@@ -448,7 +448,7 @@ export default function Proyectos() {
       </Section>
 
       {/* ─── SERVICIOS ─── */}
-      <Section id="servicios" bgImage="https://sensible-spoonbill-485.convex.cloud/api/storage/72ad1371-9bf2-4d4d-8143-c57a04b35dfc">
+      <Section id="servicios" bgImage="/images/obra-6.jpg">
         <SectionTitle label="Servicios" title="Soluciones integrales para tu proyecto" />
         <motion.div
           initial="hidden"
@@ -526,7 +526,7 @@ export default function Proyectos() {
       </Section>
 
       {/* ─── PROYECTOS ─── */}
-      <Section id="proyectos" bgImage="https://sensible-spoonbill-485.convex.cloud/api/storage/f20a63a0-16c8-4bc5-a8d5-910a6978b92d">
+      <Section id="proyectos" bgImage="/images/obra-3.jpg">
         <SectionTitle
           label="Proyectos"
           title="Cada proyecto refleja nuestro compromiso con la excelencia"
@@ -625,7 +625,7 @@ export default function Proyectos() {
       </Section>
 
       {/* ─── CONTACTO ─── */}
-      <Section id="contacto" bgImage="https://sensible-spoonbill-485.convex.cloud/api/storage/a1c6f8e6-a0c3-425a-adcf-e07b2bf5fa3c">
+      <Section id="contacto" bgImage="/images/obra-2.jpg">
         <SectionTitle label="Contacto" title="¿Tienes un proyecto en mente?" />
         <div className="grid lg:grid-cols-2 gap-12">
           <motion.p

@@ -2,18 +2,18 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
-const IMG_HERO       = "https://sensible-spoonbill-485.convex.cloud/api/storage/945a923f-2e35-4740-8a50-f0e2880ce5b8";
-const IMG_LOGO       = "https://sensible-spoonbill-485.convex.cloud/api/storage/998944bd-6182-44af-9d7e-84f624902489";
-const IMG_NOSOTROS   = "https://sensible-spoonbill-485.convex.cloud/api/storage/dd235b49-8d53-4dc7-8367-8301690b20e9";
+const IMG_HERO       = "/images/hero.jpg";
+const IMG_LOGO       = "/logo.png";
+const IMG_NOSOTROS   = "/images/nosotros.jpg";
 const IMG_CONTACT_BG = "/images/contact-bg.jpg";
 
 const PROJ_IMGS = [
-  { src: "https://sensible-spoonbill-485.convex.cloud/api/storage/63dcf2d0-4600-4e42-8124-bc74cb1bec11", title: "Vivienda en ejecución",    desc: "Obra desarrollada con planificación, calidad y terminaciones cuidadas." },
-  { src: "https://sensible-spoonbill-485.convex.cloud/api/storage/82d25407-4bb5-450f-94e8-97ffbe3522a9", title: "Remodelación interior",    desc: "Obra desarrollada con planificación, calidad y terminaciones cuidadas." },
-  { src: "https://sensible-spoonbill-485.convex.cloud/api/storage/45ab079a-83c6-467c-8d47-578c761367d1", title: "Vivienda moderna",         desc: "Obra desarrollada con planificación, calidad y terminaciones cuidadas." },
-  { src: "https://sensible-spoonbill-485.convex.cloud/api/storage/7812168b-058b-40fe-8d95-67100a6f6b4c", title: "Estructura y metalcon",    desc: "Obra desarrollada con planificación, calidad y terminaciones cuidadas." },
-  { src: "https://sensible-spoonbill-485.convex.cloud/api/storage/fe952a51-a6a5-4e44-a94c-583c090856cd", title: "Remodelación exterior",    desc: "Obra desarrollada con planificación, calidad y terminaciones cuidadas." },
-  { src: "https://sensible-spoonbill-485.convex.cloud/api/storage/bcd81ff7-98aa-4dc5-b98d-6b9249fba396", title: "Ampliación vivienda",      desc: "Obra desarrollada con planificación, calidad y terminaciones cuidadas." },
+  { src: "/images/obra-1.jpg", title: "Vivienda iluminada",       desc: "Casa entregada con terminaciones de calidad e iluminación exterior integrada." },
+  { src: "/images/obra-3.jpg", title: "Vivienda moderna",         desc: "Diseño contemporáneo con amplios ventanales y espacios luminosos." },
+  { src: "/images/obra-5.jpg", title: "Casa en revestimiento",    desc: "Volumen sobrio con terraza y revestimiento de madera." },
+  { src: "/images/obra-10.jpg",title: "Estructura y metalcon",    desc: "Obra en ejecución con estructura metálica y paneles SIP." },
+  { src: "/images/obra-9.jpg", title: "Vivienda de adobe",        desc: "Construcción cálida con materialidad noble y vistas al entorno." },
+  { src: "/images/obra-6.jpg", title: "Ampliación y jardín",      desc: "Proyecto integrado al paisaje con áreas verdes y terraza." },
 ];
 
 // ── SVG Icons ─────────────────────────────────────────────────────────────────
@@ -137,42 +137,42 @@ function Nosotros() {
 const SERVICIOS = [
   {
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
-    img: 'https://sensible-spoonbill-485.convex.cloud/api/storage/63dcf2d0-4600-4e42-8124-bc74cb1bec11',
+    img: '/images/obra-1.jpg',
     title: 'Construcción de Viviendas',
     desc: 'Construcción de viviendas nuevas en sistemas tradicionales, madera, metalcon, SIP y soluciones mixtas.',
     link: 'https://www.instagram.com/p/DW7ugEYkQmg/',
   },
   {
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>,
-    img: 'https://sensible-spoonbill-485.convex.cloud/api/storage/82d25407-4bb5-450f-94e8-97ffbe3522a9',
+    img: '/images/obra-3.jpg',
     title: 'Remodelaciones y Ampliaciones',
     desc: 'Transformamos espacios existentes, mejorando distribución, terminaciones, funcionalidad y valor de la propiedad.',
     link: 'https://www.instagram.com/p/DN9vcxmjbqH/',
   },
   {
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>,
-    img: 'https://sensible-spoonbill-485.convex.cloud/api/storage/7abc351b-73aa-49d2-bc1a-a0dcc602d2f5',
+    img: '/images/obra-3.jpg',
     title: 'Mantenciones y Reparaciones',
     desc: 'Soluciones para filtraciones, pinturas, sellos, revestimientos, terminaciones, cielos, tabiques, baños, cocinas y reparaciones generales.',
     link: 'https://www.instagram.com/p/DMrMdT0xONA/',
   },
   {
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>,
-    img: 'https://sensible-spoonbill-485.convex.cloud/api/storage/7812168b-058b-40fe-8d95-67100a6f6b4c',
+    img: '/images/obra-5.jpg',
     title: 'Estructuras y Techumbres',
     desc: 'Estructuras metálicas, cubiertas, pavimentos, instalaciones, revestimientos, techumbres y soluciones específicas.',
     link: 'https://www.instagram.com/stories/highlights/18098021983604855/',
   },
   {
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>,
-    img: 'https://sensible-spoonbill-485.convex.cloud/api/storage/16702e3c-2716-4eee-9de2-d52b0b654158',
+    img: '/images/obra-5.jpg',
     title: 'Proyectos Técnicos y Presupuestos',
     desc: 'Elaboración de presupuestos detallados, cubicaciones, planificación de obra, control de avances y asesoría constructiva.',
     link: 'https://www.instagram.com/stories/highlights/18365186584176379/',
   },
   {
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>,
-    img: 'https://sensible-spoonbill-485.convex.cloud/api/storage/f75d9844-cc9d-4b87-af0b-3a511c1f68ab',
+    img: '/images/obra-7.jpg',
     title: 'Asesoría Constructiva',
     desc: 'Acompañamiento técnico para tomar las mejores decisiones en cada etapa de tu proyecto.',
     link: 'https://www.instagram.com/stories/highlights/17852826942473138/',
@@ -350,7 +350,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-5">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <img src="https://sensible-spoonbill-485.convex.cloud/api/storage/998944bd-6182-44af-9d7e-84f624902489" alt="Grupo Lithia" className="h-24 mb-4 object-contain" />
+            <img src="/logo.png" alt="Grupo Lithia" className="h-24 mb-4 object-contain" />
             <p className="text-zinc-500 text-xs leading-relaxed mb-6">
               Construcción, remodelaciones y mantenciones con calidad, compromiso y respaldo técnico.
             </p>
@@ -366,7 +366,7 @@ function Footer() {
           <div>
             <h3 className="text-white font-bold text-xs tracking-widest uppercase mb-5">Contacto</h3>
             <div className="space-y-3 text-xs text-zinc-400">
-              <p>📧 contacto@grupolithia.cl</p>
+              <p>📧 julian.gomez@grupolithia.cl</p>
               <p>🌐 www.grupolithia.cl</p>
               <p>📞 +56 9 8368 1545</p>
               <p>📍 Kilómetro 3 Ruta 66 PC29, Santo Domingo<br />&nbsp;&nbsp;&nbsp;&nbsp;Región de Valparaíso y alrededores</p>
